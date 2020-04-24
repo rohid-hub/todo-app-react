@@ -1,0 +1,138 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #f4f4f4;
+    --bg-secondary: #fff;
+    --green: rgb(30, 220, 30);
+    --red: rgb(250, 50, 50);
+    --font-primary: #333;
+    --font-secondary: #555;
+
+    /* --bg-primary: #222;
+    --bg-secondary: #333;
+    --green: rgb(30, 220, 30);
+    --red: rgb(250, 50, 50);
+    --font-primary: #f5f5f5;
+    --font-secondary: #f1f1f1; */
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
+body {
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--bg-secondary);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Logo {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--font-primary);
+    margin-bottom: 20px;
+}
+.TodoList {
+    width: 100%;
+}
+
+.TodoItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.TodoItem > label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.TodoItem > label > input {
+    display: none;
+}
+
+.TodoItem > label:hover {
+    background-color: var(--bg-primary);
+}
+
+.TodoItem > button,
+.AddTodoForm > button {
+    cursor: pointer;
+    background-color: var(--bg-primary);
+    padding: 10px 10px;
+    width: 80px;
+    color: var(--font-secondary);
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.TodoItem > button:hover {
+    color: var(--bg-primary);
+    background-color: var(--red);
+}
+
+.AddTodoForm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.AddTodoForm > input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.AddTodoForm > button {
+    background-color: var(--green);
+    color: var(--bg-primary);
+}
+
+.ToggleList {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px;
+    justify-content: center;
+}
+
+.ToggleList > button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: var(--bg-primary);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
